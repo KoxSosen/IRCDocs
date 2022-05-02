@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ircdocs.hahota.net/general/</loc>
+         <lastmod>2022-05-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ircdocs.hahota.net/moderatorguide/</loc>
          <lastmod>2022-05-02</lastmod>
          <changefreq>daily</changefreq>

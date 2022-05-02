@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="IRC Documentation for irc.hahota.net.">
         <meta name="author" content="KoxSosen">
-        <link rel="canonical" href="https://ircdocs.hahota.net/rules/">
+        <link rel="canonical" href="https://ircdocs.hahota.net/general/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Rules - IRC Docs</title>
+        <title>General - IRC Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
@@ -53,14 +53,14 @@
             
             
             
-                <li >
-                    <a href="../general/">General</a>
+                <li class="active">
+                    <a href="./">General</a>
                 </li>
             
             
             
-                <li class="active">
-                    <a href="./">Rules</a>
+                <li >
+                    <a href="../rules/">Rules</a>
                 </li>
             
             
@@ -81,12 +81,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                     <li >
-                        <a rel="next" href="../general/">
+                        <a rel="next" href="..">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../commands/">
+                        <a rel="prev" href="../rules/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -111,9 +111,13 @@
     <ul class="nav bs-sidenav">
       
     
-        <li class="main active"><a href="#rules">Rules:</a></li>
+        <li class="main active"><a href="#general">General</a></li>
         
-            <li><a href="#bots-bouncers-self-hosted-instances">Bots, bouncers, self hosted instances.</a></li>
+            <li><a href="#default-channel-modes">Default channel modes:</a></li>
+        
+            <li><a href="#creating-your-own-public-channels">Creating your own public channels.</a></li>
+        
+            <li><a href="#creating-a-privateinvite-only-channel">Creating a private/invite only channel.</a></li>
         
     
     
@@ -121,20 +125,34 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="rules">Rules:</h1>
-<p><strong>Warning</strong>: These rules apply for every channel on the server, even the ones we didn't create.</p>
-<ol>
-<li>Please don't swear, or spam.</li>
-<li>Be polite.</li>
-<li>Use common sense.</li>
-<li>We don't tolerate hate speech, personal attacks, porn, gore, or NSFW content.</li>
-<li>Advertising is forbidden, unless you're helping someone.</li>
-<li>Do not troll.</li>
-</ol>
-<p>Moderators, and chanops may mute, or ban you for breaking these rules.</p>
-<p>Regarding your own channels; Feel free to add you own rules on top of these, but please try to enfore the prior.</p>
-<h2 id="bots-bouncers-self-hosted-instances">Bots, bouncers, self hosted instances.</h2>
-<p>It is absolutely allowed to join our IRC network with bots, and other self hosted software. One thing, we, the operators ask for, is that please use common sense as mentioned above, and don't abuse, or connect with unnececarry services. Abusing our network may result in an IP ban. </p></div>
+<h1 id="general">General</h1>
+<h2 id="default-channel-modes">Default channel modes:</h2>
+<p>Default channel modes are: <code>+RnC</code>.</p>
+<h2 id="creating-your-own-public-channels">Creating your own public channels.</h2>
+<p>Feel free to create your own channels, and use them for your needs. Upon creating a channel, you'll become the owner of that specific channel, meaning you'll have the rights to control the permissions, the topic, the channel history, and many more in that channel.</p>
+<p>For commands, please refer to our <a href="https://ircdocs.hahota.net/commands">commands</a> page.</p>
+<h2 id="creating-a-privateinvite-only-channel">Creating a private/invite only channel.</h2>
+<p>You may wish to create your own private channel. Private channels are only viewable by people you invite, and you. (and network operators).</p>
+<p>To make a channel private, use the <code>+i</code> mode. If you have any bots, they'll have to be added as well.</p>
+<p>First, register a channel, and then set it as invite only. Then use the invite command as shown above:</p>
+<ul>
+<li>
+<ul>
+<li><code>/msg ChanServ register #privatechannelname</code> - Register your channel.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><code>/mode #privatechannelname +i</code> - Set it as invite only.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><code>/mode #privatechannelname +i username</code> - Invite <code>username</code> to the channel.</li>
+</ul>
+</li>
+</ul>
+<p>At this point, <code>username</code> will be able to join the channel just like any other: <code>/join #privatechanelname</code>.</p></div>
                 </div>
         </div>
 
