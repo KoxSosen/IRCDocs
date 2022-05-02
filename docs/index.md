@@ -1,6 +1,6 @@
 # Welcome to the IRC Docs!
 
-Welcome to the Liberorum IRC Documentation. This documentation aims to give some insights, and also provide some useful commands.
+Welcome to the Hahota IRC Documentation. This documentation aims to give some insights, and also provide some useful commands.
 
 ## How do I connect?
 
