@@ -1,10 +1,16 @@
 site_name: IRC Docs
-site_url: https://ircdocs.hahota.net/
+site_description: IRC Documentation for irc.hahota.net.
+site_author: KoxSosen
+copyright: AGPL-3.0 License
+site_url: https://ircdocs.hahota.net
+repo_url: https://github.com/KoxSosen/IRCDocs
 nav:
   - Home: index.md
   - Rules: rules.md
   - Commands: commands.md
   - Moderator Guide: moderatorguide.md
+theme: 
+  name: bootstrap386
 extra_css:
-  - css/exter.css
-theme: bootstrap386
+  - externalcss/exter.css
+plugins: []
