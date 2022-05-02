@@ -5,4 +5,6 @@ nav:
   - Rules: rules.md
   - Commands: commands.md
   - Moderator Guide: moderatorguide.md
+extra_css:
+  - css/exter.css
 theme: bootstrap386
