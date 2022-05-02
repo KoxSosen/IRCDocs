@@ -1,5 +1,5 @@
 /* Required change because of our current theme. */
 /* https://gitlab.com/lramage/mkdocs-bootstrap386/-/issues/7 */
 .bs-sidebar {
-  display: none;
+  display: contents;
 }
