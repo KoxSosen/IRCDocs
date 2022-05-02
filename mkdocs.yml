@@ -1,0 +1,8 @@
+site_name: IRC Docs
+site_url: https://ircdocs.hahota.net/
+nav:
+  - Home: index.md
+  - Rules: rules.md
+  - Commands: commands.md
+  - Moderator Guide: moderatorguide.md
+theme: bootstrap386
