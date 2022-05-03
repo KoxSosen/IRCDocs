@@ -17,15 +17,17 @@ To register an account for yourself;
 1. Choose your preferred name, and hit connect.
 2. DM nickserv: `msg nickserv register hunter12` (make sure to replace hunter12 with your preferred password).
 
+As an alternative you can use the `REGISTER` command before fully connecting, if your client supports that.
+
 ## Login:
 
 After registering, you'll might disconnect at some time. 
 
-On our server, it is very important that you authenticate your account during the initial IRC handshake, otherwise you won't be able to use your previusly registered username. Our preferred mehanism for this is `SASL`, but you can also use the `PASS` command. Set the server password field to `username:hunter12`.
+On our server, it is very important that you authenticate your account during the initial IRC handshake, otherwise you won't be able to use your previusly registered username. Our preferred mehanism for this is `SASL`, but you can also use the `PASS` command. Set the server password field to `username:hunter12`. 
 
 ## Message sending:
 
-On our server, by default, upon connecting a channel, the server sends the previus `100` messages to your client. This can be disabled, with the following command: `msg nickserv set autoreplay-lines 0`.
+On our server, by default, upon connecting a channel, the server sends the previus `100` messages to your client. This can be disabled, with the following command: `msg nickserv set autoreplay-lines 0`. More about this can be found [here](https://ircdocs.hahota.net/general/#persistent-message-history).
 
 ## Futhermore:
 
