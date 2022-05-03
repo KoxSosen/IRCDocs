@@ -113,11 +113,23 @@
     
         <li class="main active"><a href="#general">General</a></li>
         
-            <li><a href="#default-channel-modes">Default channel modes:</a></li>
+            <li><a href="#default-user-channel-modes">Default user, channel modes:</a></li>
         
-            <li><a href="#creating-your-own-public-channels">Creating your own public channels.</a></li>
+            <li><a href="#ip-cloaking">IP cloaking:</a></li>
         
-            <li><a href="#creating-a-privateinvite-only-channel">Creating a private/invite only channel.</a></li>
+            <li><a href="#persistent-message-history">Persistent message history:</a></li>
+        
+            <li><a href="#always-on">Always on:</a></li>
+        
+            <li><a href="#email-verification">Email verification:</a></li>
+        
+            <li><a href="#limits-throttling">Limits, throttling:</a></li>
+        
+            <li><a href="#multiclient">Multiclient</a></li>
+        
+            <li><a href="#creating-your-own-public-channels">Creating your own public channels:</a></li>
+        
+            <li><a href="#creating-a-privateinvite-only-channel">Creating a private/invite only channel:</a></li>
         
     
     
@@ -126,12 +138,30 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="general">General</h1>
-<h2 id="default-channel-modes">Default channel modes:</h2>
-<p>Default channel modes are: <code>+RnC</code>.</p>
-<h2 id="creating-your-own-public-channels">Creating your own public channels.</h2>
+<h2 id="default-user-channel-modes">Default user, channel modes:</h2>
+<p>The default user modes are: <code>+iRT</code>. See <code>/QUOTE HELP umodes</code> for explanation. </p>
+<p>Default channel modes are: <code>+ntCR</code>. See <code>/QUOTE HELP cmodes</code> for what each option means.</p>
+<h2 id="ip-cloaking">IP cloaking:</h2>
+<p>On our server all IP's are cloacked. What this means, is that noone will be able to see your IP, or the hostname you're connecting from. Not even channel OP's. An example ip would be <code>84781476174x.irc.hahota.net</code>.</p>
+<h2 id="persistent-message-history">Persistent message history:</h2>
+<p>On our server, we store everything you send and for later playback, both in private messages, and both in channels. 
+In every channel, history can be requested with the <code>/history &lt;timeframe&gt;</code> command. For channel operators, you can opt-out this feature.</p>
+<p>For private messages, this is enabled as well, but you have the option to disable this behavior.</p>
+<p>To corporate with data privacy regulations, you may request your data to be deleted from this, or these databases, however we can't guarantee any data deletion from connected user's clients.</p>
+<h2 id="always-on">Always on:</h2>
+<p>You can set your status to show up as "always on", even if you aren't connected to the server. When connecting back, the server will only try to send the messages to your client that you missed. Enable this with <code>/msg NickServ set always-on true</code>.</p>
+<p>Our choice of server software, <a href="https://github.com/ergochat/ergo/">Ergo</a> supports setting different Device ID's. Device ID's can be used to track messages, eg you can use a different device ID for you phone and PC, and the server will automatically track which messages you missed/viewed on each device, and sync them. By default this is <strong>not</strong> enabled. You have multiple options to set a device id. You can either add it to your SASL username (<code>exampleuser</code> -&gt; <code>exampleuser@pc</code>), to your IRC ident, and you can add it to your <code>PASS</code> commnad as well (<code>exampleuser:hunter12</code> -&gt; <code>exampleuser@pc:hunter12</code>).</p>
+<p>If you have only one device, you can use the <code>/msg NickServ set autoreplay-missed true</code> command.</p>
+<h2 id="email-verification">Email verification:</h2>
+<p>Email verification is disabled within our system. It might be implemented in the future.</p>
+<h2 id="limits-throttling">Limits, throttling:</h2>
+<p>Multiple kinds of limits are implemented within our system to prevent spam, and many more. For more details, please ask the network operators.</p>
+<h2 id="multiclient">Multiclient</h2>
+<p>Multi client compatibility is enabled, and is allowed.</p>
+<h2 id="creating-your-own-public-channels">Creating your own public channels:</h2>
 <p>Feel free to create your own channels, and use them for your needs. Upon creating a channel, you'll become the owner of that specific channel, meaning you'll have the rights to control the permissions, the topic, the channel history, and many more in that channel.</p>
 <p>For commands, please refer to our <a href="https://ircdocs.hahota.net/commands">commands</a> page.</p>
-<h2 id="creating-a-privateinvite-only-channel">Creating a private/invite only channel.</h2>
+<h2 id="creating-a-privateinvite-only-channel">Creating a private/invite only channel:</h2>
 <p>You may wish to create your own private channel. Private channels are only viewable by people you invite, and you. (and network operators).</p>
 <p>To make a channel private, use the <code>+i</code> mode. If you have any bots, they'll have to be added as well.</p>
 <p>First, register a channel, and then set it as invite only. Then use the invite command as shown above:</p>

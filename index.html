@@ -141,11 +141,12 @@
 <li>Choose your preferred name, and hit connect.</li>
 <li>DM nickserv: <code>msg nickserv register hunter12</code> (make sure to replace hunter12 with your preferred password).</li>
 </ol>
+<p>As an alternative you can use the <code>REGISTER</code> command before fully connecting, if your client supports that.</p>
 <h2 id="login">Login:</h2>
 <p>After registering, you'll might disconnect at some time. </p>
-<p>On our server, it is very important that you authenticate your account during the initial IRC handshake, otherwise you won't be able to use your previusly registered username. Our preferred mehanism for this is <code>SASL</code>, but you can also use the <code>PASS</code> command. Set the server password field to <code>username:hunter12</code>.</p>
+<p>On our server, it is very important that you authenticate your account during the initial IRC handshake, otherwise you won't be able to use your previusly registered username. Our preferred mehanism for this is <code>SASL</code>, but you can also use the <code>PASS</code> command. Set the server password field to <code>username:hunter12</code>. </p>
 <h2 id="message-sending">Message sending:</h2>
-<p>On our server, by default, upon connecting a channel, the server sends the previus <code>100</code> messages to your client. This can be disabled, with the following command: <code>msg nickserv set autoreplay-lines 0</code>.</p>
+<p>On our server, by default, upon connecting a channel, the server sends the previus <code>100</code> messages to your client. This can be disabled, with the following command: <code>msg nickserv set autoreplay-lines 0</code>. More about this can be found <a href="https://ircdocs.hahota.net/general/#persistent-message-history">here</a>.</p>
 <h2 id="futhermore">Futhermore:</h2>
 <p>Please see our other wiki pages.</p></div>
                 </div>

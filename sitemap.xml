@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ircdocs.hahota.net/</loc>
-         <lastmod>2022-05-02</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ircdocs.hahota.net/commands/</loc>
-         <lastmod>2022-05-02</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ircdocs.hahota.net/general/</loc>
-         <lastmod>2022-05-02</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ircdocs.hahota.net/moderatorguide/</loc>
-         <lastmod>2022-05-02</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ircdocs.hahota.net/rules/</loc>
-         <lastmod>2022-05-02</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
